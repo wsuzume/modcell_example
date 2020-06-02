@@ -9,6 +9,8 @@ In this example, I'm aiming following situation.
 * `module_notebook`: where module development and testing are going (or where stable analysis results are saved)
 * `module`: where exported modules are saved
 
+You can see usage examples in `notebooks/import_test.ipynb` and `notebooks/compile.ipynb`.
+
 ### Construct virtual environment
 
 ```
