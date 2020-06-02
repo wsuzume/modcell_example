@@ -26,7 +26,7 @@ import modcell as mods
 at the head of the notebook. And now you can import IPython notebook, which extension is `.ipynb`.
 `modcell` only imports cells which has
 
-```
+```python
 # modcell
 ```
 
@@ -35,7 +35,7 @@ comment at the head of the cell.
 ### Tagging
 `modcell` supports selective import using tag. The syntax
 
-```
+```python
 # modcell: tagname
 ```
 
@@ -43,14 +43,14 @@ can be used for defining a tag. If you use `import` to import other notebooks, `
 
 To import only tagged cells, use following syntax.
 
-```
+```python
 # import only tagged cells
 modname = mods._import('module_notebook', tag='tagname')
 ```
 
 Which has almost the same meaning as
 
-```
+```python
 # import all cells which has '# modcell' comment
 import module_notebook as modname
 ```
@@ -60,7 +60,7 @@ the former code imports only tagged but the latter one imports all.
 ### Compile
 `modcell` can export cells which are read. You can generate multiple instances of modcell like
 
-```
+```python
 import modcell as mods
 
 mod_1 = mods.ModCell()
@@ -70,13 +70,13 @@ mod_2 = mods.ModCell()
 
 and you can import cells to the ModCell instances.
 
-```
+```python
 modname = mod_1._import('module_notebook')
 ```
 
 And `compile` method exports imported cells to a file.
 
-```
+```python
 import modcell as mods
 
 mod_debug = mods.ModCell()
