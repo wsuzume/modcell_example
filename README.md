@@ -3,6 +3,12 @@
 This repository is an example of notebooks using [modcell](https://github.com/wsuzume/modcell).
 
 ## Usage
+In this example, I'm aiming following situation.
+
+* `notebooks`: where data analysis or experiments are going
+* `module_notebook`: where module development and testing are going (or where stable analysis results are saved)
+* `module`: where exported modules are saved
+
 ### Construct virtual environment
 
 ```
